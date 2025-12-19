@@ -5,30 +5,69 @@
 <head>
 
 	<meta charset="utf-8">
-	<!-- <base href="/"> -->
-
-	<title>OptimizedHTML 5</title>
+	<title>Hotel rooms</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
-
 	<link rel="stylesheet" href="css/app.min.css">
 	<script src="js/app.min.js" defer></script>
 
 </head>
 
 <body>
+<section class="rooms">
+  <h1 class="rooms__title">НОМЕРА И ЦЕНЫ</h1>
 
-	<div style="max-width: 700px; margin: auto">
+  <div class="rooms__list">
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2 class="heading">Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
+    <article class="room-card">
+      <div class="room-card__image">
+        <img src="images/rooms/executive-suite.png" alt="Executive Suite">
+      </div>
+      <div class="room-card__content">
+        <h2 class="room-card__title">Executive Suite</h2>
+        <p class="room-card__description">Максимальный комфорт и сервис</p>
+        <div class="room-card__price">от 12 000 ₽</div>
+        <div class="room-card__actions">
+          <button class="room-card__button room-card__button--book">Забронировать</button>
+          <button class="room-card__button room-card__button--more">Подробнее</button>
+        </div>
+      </div>
+    </article>
 
-	</div>
+    <article class="room-card room-card--best">
+      <div class="room-card__image">
+        <span class="room-card__badge">Лучшая цена</span>
+        <img src="images/rooms/duplex.png" alt="Duplex">
+      </div>
+      <div class="room-card__content">
+        <h2 class="room-card__title">Duplex</h2>
+        <p class="room-card__description">Оптимальное соотношение цены и комфорта</p>
+        <div class="room-card__price">от 6 500 ₽</div>
+        <div class="room-card__actions">
+          <button class="room-card__button room-card__button--book">Забронировать</button>
+          <button class="room-card__button room-card__button--more">Подробнее</button>
+        </div>
+      </div>
+    </article>
 
+    <article class="room-card">
+      <div class="room-card__image">
+        <img src="images/rooms/business-suite.png" alt="Business Suite">
+      </div>
+      <div class="room-card__content">
+        <h2 class="room-card__title">Business Suite</h2>
+        <p class="room-card__description">Просторный номер для деловых поездок</p>
+        <div class="room-card__price">от 8 500 ₽</div>
+        <div class="room-card__actions">
+          <button class="room-card__button room-card__button--book">Забронировать</button>
+          <button class="room-card__button room-card__button--more">Подробнее</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
 </body>
 </html>
